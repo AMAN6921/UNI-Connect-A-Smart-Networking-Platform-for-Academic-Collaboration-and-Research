@@ -1,6 +1,6 @@
-# GEU-Connect 
+# UNI-Connect 
 
-**GEU-Connect** is a full-stack academic networking platform designed exclusively for Graphic Era University students and professors. It facilitates collaboration, knowledge sharing, and professional networking within the university community.
+**UNI-Connect** is a full-stack academic networking platform designed exclusively for students and professors at Indian Universities. It facilitates collaboration, knowledge sharing, and professional networking within the university community.
 
 ---
 
@@ -8,7 +8,7 @@
 
 ### 1. **User Authentication**
 - Secure registration and login system
-- Email validation (only @geu.ac.in emails allowed)
+- Email validation (only university emails allowed)
 - Role-based access (Student/Professor)
 - JWT-based authentication
 
@@ -68,7 +68,7 @@
 ```javascript
 {
   fullName: String,           // User's full name
-  email: String,              // GEU email (@geu.ac.in)
+  email: String,              // UNI email for example @geu.ac.in
   password: String,           // Hashed password (bcrypt)
   role: String,               // 'Student' or 'Professor'
   reputationPoints: Number,   // User reputation (default: 0)
@@ -191,7 +191,7 @@
 
 ### **1. Authentication Flow**
 ```
-User Registration → Email Validation (@geu.ac.in) → Password Hashing (bcrypt) 
+User Registration → Email Validation for example @geu.ac.in → Password Hashing (bcrypt) 
 → Store in Users Collection → Return JWT Token
 
 User Login → Email/Password Verification → Compare Hashed Password 
@@ -455,7 +455,7 @@ npm start
 
 ## Security Features
 
-1. **Email Validation:** Only @geu.ac.in emails allowed
+1. **Email Validation:** Only university assigned emails allowed
 2. **Password Hashing:** bcrypt with salt rounds
 3. **JWT Authentication:** Secure token-based auth
 4. **Protected Routes:** Middleware checks for valid tokens
@@ -574,7 +574,7 @@ npm start
 
 ## License
 
-This project is developed for Graphic Era University and is intended for educational purposes.
+This project is developed for Indian Universities and is intended for educational purposes.
 
 ---
 
@@ -588,11 +588,6 @@ This project is developed for Graphic Era University and is intended for educati
 - CORS enabled for frontend-backend communication
 
 ---
-
-## Acknowledgments
-
-Built with ❤️ for the GEU community to foster collaboration, learning, and innovation.
-
+Built with ❤️ to empower the educational community through collaboration, learning, and innovation.
 ---
 
-**Happy Coding! 🚀**
